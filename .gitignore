@@ -1,7 +1,7 @@
 
 # big size file
-/api/model
-/templates/node_modules
+api/model
+templates/node_modules
 
 # unnecessery app
 /vitPredict
