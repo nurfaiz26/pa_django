@@ -1,0 +1,236 @@
+/* color */
+:root{
+    --primary: #FFD3CE;
+    --primary-dark: #DFD3CE;
+    --secondary: #FF423D;
+    --secondary-dark: #DF423D;
+    --tersier: #7F211E;
+}
+
+/* landing page */
+body{
+    background-color: var(--primary)
+}
+
+.navbar{
+    background-color: var(--secondary);
+}
+
+.navbar-brand img{
+    width: 70%;
+}
+
+.btn{
+    border-radius: 8px;
+}
+
+.btn-primary, 
+.btn-outline-secondary{
+    background-color: var(--primary);
+}
+
+.btn-primary{
+    background-color: var(--primary);
+}
+
+.btn-primary:hover{
+    background-color: var(--primary-dark);
+}
+
+.btn-outline-secondary{
+    border: none;
+    color: black;
+}
+
+.btn-outline-secondary:hover{
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+
+.navbar .btn-outline-secondary{
+    border: none;
+    color: black;
+    font-weight: 700;
+}
+
+.navbar .btn-outline-secondary:hover{
+    background-color: var(--primary-dark);
+    color: black;
+}
+
+section.hero{
+    padding: 80px 0;
+}
+
+section.hero .hero-header{
+    font-weight: 700;
+    line-height: 66px;
+    font-size: 48px;
+    color: black;
+}
+
+section.hero .hero-paragraph{
+    font-size: 24px;
+    color: black;
+}
+
+section.hero .image-upload{
+    padding: 20px 0;
+}
+
+section.hero .row .btn-outline-secondary{
+    border: none;
+    color: white;
+    background-color: var(--secondary);
+    font-weight: 700;
+}
+
+section.hero .btn-outline-secondary{
+    border: none;
+    color: white;
+    background-color: var(--secondary);
+    font-weight: 700;
+    font-size: large;
+}
+
+section.hero .btn-outline-secondary:hover{
+    background-color: var(--secondary-dark);
+    color: white;
+}
+
+.classification-box{
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--secondary);
+    text-align: center;
+}
+
+.classification-box img{
+    border-radius: 10px;
+    max-width: 50%;
+    max-height: 300px;
+}
+
+.classification-box p{
+    font-weight: 700;
+    color: black;
+}
+
+/* login page */
+.box{
+    background-color: white;
+    border-radius: 10px;
+}
+
+section.hero .hero-login-header{
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--secondary);
+    text-align: center;
+}
+
+/* dahsboard page */
+.sidebar{
+   background-color: var(--secondary);
+   position: fixed;
+   width: 16%;
+}
+
+.sidebar .nav-link{
+   color: white;
+}
+
+.sidebar .aktif{
+   background-color: var(--tersier);
+}
+
+.dashboard-container{
+    margin-left: 16%;
+}
+
+.dahsboard-header{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.input-group-append .btn-outline-secondary{
+    background-color: var(--secondary);
+    color: white;
+}
+
+.input-group-append .btn-outline-secondary:hover{
+    background-color: var(--secondary-dark);
+    color: white;
+}
+
+table tr td, table tr th{
+    background-color: transparent !important;
+}
+
+.ct-patient{
+    max-width: 10px;
+}
+
+.btn-edit{
+    color: orange;
+    font-size: large;
+    background-color: none
+}
+
+.btn-delete{
+    color: red;
+    font-size: large;
+    background-color: none
+}
+
+.img-fluid{
+    border-radius: 10px;
+}
+
+/* detail page */
+.box-detail-header{
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--secondary);
+    text-align: center;
+}
+
+.btn-classification{
+    background-color: var(--secondary);
+    color: white;
+}
+
+.btn-classification:hover{
+    background-color: var(--secondary-dark);
+}
+
+.btn-classification-reset{
+    background-color: white;
+}
+
+.border-danger:hover{
+    color: gray;
+}
+
+.btn-profile{
+    background-color: var(--secondary);
+    color: white;
+}
+
+.btn-profile:hover{
+    background-color: var(--secondary-dark);
+}
+
+.box-profile{
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 20% 10% 20%;
+    
+}
