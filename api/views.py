@@ -11,6 +11,7 @@ from typing import List, Tuple
 from PIL import Image
 from torch import nn
 import urllib.request
+import os
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -36,6 +37,12 @@ def classification(req):
     
     if result != "Nonctscan":
         result, accuracy = predict(ctscanUrl)
+
+    image_name = ctscanUrl.split('/')
+    if os.path.exists(f"./static/ctImages/{image_name[4]}"):
+        os.remove(f"./static/ctImages/{image_name[4]}")
+    else:
+        print("The file does not exist")
 
     resObj = {"ctscanUrl": ctscanUrl, "result": result, "accuracy": accuracy}
 
@@ -84,7 +91,9 @@ def pred_and_plot_image(
     device: torch.device = device,
 ):
     # if image_path from a url
-    urllib.request.urlretrieve(image_path, "./static/ctImages/ctImage.png") 
+    image_name = image_path.split('/')
+    # urllib.request.urlretrieve(image_path, "ctImage.png") 
+    urllib.request.urlretrieve(image_path, f"./static/ctImages/{image_name[4]}") 
     img = Image.open("./static/ctImages/ctImage.png")
 
     img = img.convert("RGB")
