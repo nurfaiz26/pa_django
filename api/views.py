@@ -94,7 +94,8 @@ def pred_and_plot_image(
     image_name = image_path.split('/')
     # urllib.request.urlretrieve(image_path, "ctImage.png") 
     urllib.request.urlretrieve(image_path, f"./static/ctImages/{image_name[4]}") 
-    img = Image.open("./static/ctImages/ctImage.png")
+    # img = Image.open("./static/ctImages/ctImage.png")
+    img = Image.open(f"./static/ctImages/{image_name[4]}")
 
     img = img.convert("RGB")
 
